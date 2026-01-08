@@ -1,0 +1,12 @@
+[package]
+name = "ffms2info"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libc = "0.2.180"
+ffms2-sys = { version = "0.3.0", features = ["static"] }
+clap = { version = "4.5", features = ["derive"] }
+
+[build-dependencies]
+vcpkg = "0.2"
